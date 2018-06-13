@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mtime时光网</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+    <!--禁止缩放 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/theater.css">
+
+    <!-- <html> fontsize值 -->
+    <script src="js/apps.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- 打开app -->
+        <div id="ad"></div>
+
+        <!-- 内容区 头部-->
+        <div class="wrap_white">
+            <header id="headerNav"></header>
+
+            <section>
+                <!-- 搜索栏 -->
+                <div class="search">
+
+                    <div class="searchbox">
+                        <a href="/mtime/citylist/city.html">
+                            <div class="localcity">
+                                <b>北京</b>
+                                <i class="i_block i_city"></i>
+                            </div>
+                        </a>
+
+                        <input type="text" id="searchbar" placeholder="筛选影院" value="">
+                        <a class="delete"></a>
+                        <a class="searchbtn">
+                            <span>搜索</span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- 筛选影院 -->
+                <div class="select">
+                    <ul class="sel1">
+                        <li class="active">
+                            <a href="javascript:void(0)">
+                                <span>离我最近</span>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>全城</span>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>影厅特效</span>
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sel2">
+                        <div class="sort">
+                            <ul>
+                                <li>
+                                    <span class="sel">离我最近</span>
+                                </li>
+                                <li>
+                                    <span>价格最低</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="part">
+                            <header>
+                                <ul>
+                                    <li id="dis">
+                                        <a class="cuur" href="javascript:void(0);">
+                                            <span>商圈</span>
+                                        </a>
+                                    </li>
+                                    <li id="sub">
+                                        <a href="javascript:void(0);">
+                                            <span>地铁</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </header>
+                            <section>
+                                <dl class="left">
+                                    <!-- <dl>
+                                        <a class="sel" href="javascript:void(0);">
+                                            <span>全部</span>
+                                        </a>
+                                    </dl> -->
+                                    <!-- <dd>
+                                        <a href="">
+                                            <span>朝阳区</span>
+                                            <span>(63)</span>
+                                        </a>
+                                    </dd> -->
+                                </dl>
+                                <dl class="right">
+                                    <!-- <dl>
+                                        <a class="sel" href="javascript:void(0);">
+                                            <span>全部</span>
+                                            <span>208</span>
+                                        </a>
+                                    </dl> -->
+                                    <!-- <dd>
+                                        <a href="">
+                                            <span>亚运村</span>
+                                            <span>5</span>
+                                        </a>
+                                    </dd> -->
+                                </dl>
+                            </section>
+                        </div>
+                        <div class="special">
+                            <div>
+                                <span class="sel">不限</span>
+                                <span>3D</span>
+                                <span>IMAX</span>
+                                <span>VIP</span>
+                                <span>4D</span>
+                                <span>巨幕</span>
+                                <span>4K</span>
+                                <span>杜比</span>
+                                <span>情侣座</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 广告轮播图 -->
+                <div class="ad">
+                    <em>广告</em>
+                    <iframe src="https://static1.mtime.cn/feature/mobile/banner/2018/0511/jhhd750175x.html" frameborder="0" scrolling="no" style="height: 90px;"></iframe>
+                </div>
+
+                <!-- 影院列表 -->
+                <ul class="theaterlist">
+                    <!-- <li class="cinema">
+                        <dl>
+                            <dt class="inf">
+                                <p class="cname">
+                                    <span>杭州新动影城</span>
+                                </p>
+                                <p class="price">
+                                    <b>23</b>
+                                    <span>元起</span>
+                                </p>
+                            </dt>
+                            <dd class="addr">
+                                <p>杭州市下沙天城东路159号东沙商业中心四楼</p>
+                            </dd>
+                            <dd class="tag">
+                                <i>3D</i><i>4D</i>
+                            </dd>
+                            <dd class="distance">
+                                <b>23</b>
+                                <span>km</span>
+                            </dd>
+                        </dl>
+                    </li> -->
+                </ul>
+            </section>
+
+            <div class="top">
+                <a href="#"></a>
+            </div>
+            <!-- footer -->
+            <footer id="footer">
+
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="js/common.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="lib/touch.js"></script>
+<script src="js/theater.js"></script>
+
+</html>

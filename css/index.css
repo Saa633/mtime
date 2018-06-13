@@ -1,0 +1,244 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.main * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* 内容区  main */
+.m_bg_white {
+  background: #fff;
+}
+.m_bg_white .movie_search {
+  background: #f6f6f6;
+  padding: .8em 1.5em .75em;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.m_bg_white .movie_search .cityshow a {
+  display: block;
+  margin-right: 1.4em;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+.m_bg_white .movie_search .cityshow b {
+  font-size: 1.6em;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.m_bg_white .movie_search .cityshow i.i_city {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: .5em;
+  margin-left: 0.2em;
+  margin-top: .3em;
+  background: url(../img/i_city.png) no-repeat;
+  background-size: cover;
+}
+.m_bg_white .movie_search .input {
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 1.2;
+  padding: 0 1.8em 0 2em;
+  border-radius: .5em;
+  background: #fff url(../img/search_ico_01.png) no-repeat 0.5em center;
+  background-size: 1.3em 1.3em;
+  position: relative;
+  border: 1px solid #bbb;
+  z-index: 0;
+  flex: 1;
+  -webkit-flex: 1;
+}
+.m_bg_white .movie_search .input span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #777;
+  line-height: 2.4em;
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.m_bg_white .movie_search .smallsize b {
+  font-size: .8em;
+}
+.m_bg_white h2 {
+  position: relative;
+  zoom: 1;
+}
+.m_bg_white h2 a {
+  display: block;
+  line-height: 2;
+}
+.m_bg_white h2 a .i_tnext {
+  display: block;
+  background: #fff url(../img/i-tmore.png) no-repeat center center;
+  background-size: auto .8rem;
+  width: 1.4rem;
+  height: .8rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.4rem;
+  overflow: hidden;
+  line-height: 11rem;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.m_bg_white h2 b {
+  font-size: 1.8em;
+}
+.m_bg_white .indexmovie {
+  padding: .5em 1.5em 1.5em;
+}
+.m_bg_white .indexmovie ul {
+  overflow: hidden;
+  height: 100%;
+}
+.m_bg_white .indexmovie ul li {
+  float: left;
+  display: inline;
+  width: 25%;
+  text-align: center;
+}
+.m_bg_white .indexmovie ul li .mpic {
+  position: relative;
+  height: 9.8em;
+  width: 6.5em;
+  margin: auto;
+  overflow: hidden;
+}
+.m_bg_white .indexmovie ul li .mpic img {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.m_bg_white .indexmovie ul li .mpic .m_score {
+  position: absolute;
+  right: .3em;
+  top: .3em;
+  background: #659d0e;
+  width: 2em;
+  height: 1.8em;
+  color: #fff;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height: 1.8em;
+  text-align: center;
+}
+.m_bg_white .indexmovie ul li .mpic .m_score i {
+  font-size: 1.1em;
+}
+.m_bg_white .indexmovie ul li p {
+  padding: .5em 0 0;
+  width: 7em;
+  margin-bottom: 1em;
+  height: 3.8em;
+  overflow: hidden;
+  margin: auto;
+}
+.m_bg_white .indexmovie ul li p span {
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+.m_bg_white .indexclick {
+  margin-top: -1em;
+  border-top: 1px solid #d8d8d8;
+  margin-left: 1.5em;
+  padding-left: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.cin_line p:first-child {
+  height: .5em;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0.2em 0.2em rgba(51, 51, 51, 0.05);
+  position: relative;
+  z-index: 1;
+}
+.cin_line p:last-child {
+  height: 1.2em;
+  background: #f6f6f6;
+  position: relative;
+  z-index: 0;
+}
+.todayhot {
+  padding: .5em 1.5em 0;
+}
+.todayhot li {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 1.3em 0 1.3em 0;
+}
+.todayhot li .table {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+.todayhot li .todaypic {
+  margin-right: 1em;
+  width: 11.2em;
+}
+.todayhot li .todaypic a {
+  display: block;
+  overflow: hidden;
+  height: 8em;
+}
+.todayhot li .todaypic a .m_img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.todayhot li .todaytxt {
+  -webkit-box-flex: 1;
+  -khtml-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -khtml-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+.todayhot li .todaytxt h2 {
+  padding: 0 0 .4em 0;
+}
+.todayhot li .todaytxt h2 a {
+  font-size: 1.6em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.todayhot li .todaytxt p {
+  padding: .4em 0;
+}
+.todayhot li .todaytxt p span {
+  font-size: 1.2em;
+  color: #777;
+}
+.todayhot li .todaytxt p time {
+  font-size: 1.1em;
+  color: #999;
+}
+.todayhot li:first-child {
+  padding-top: 0;
+}
+.todayhot li:last-child {
+  border: 0;
+}

@@ -1,0 +1,85 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.main * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main .wrap_white .header {
+  background: #1c2635;
+  display: flex;
+  position: relative;
+}
+.main .wrap_white .header a {
+  width: 4.4em;
+  height: 4.4em;
+  display: block;
+  background: url(../img/h_btn_back.png) no-repeat 1.5rem center;
+  background-size: auto 1.5rem;
+  z-index: 2;
+  position: absolute;
+}
+.main .wrap_white .header p {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  line-height: 2.8em;
+  font-size: 1.6em;
+}
+.main .wrap_white .city_search {
+  background: #fff;
+}
+.main .wrap_white .city_search .movie_search {
+  background: #f6f6f6;
+  padding: .8em 1.5em .75em;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  display: -webkit-flex;
+}
+.main .wrap_white .city_search .movie_search input {
+  border-radius: .5em;
+  background: #fff url(../img/search_ico_01.png) no-repeat 0.5em center;
+  background-size: 1.3em 1.3em;
+  position: relative;
+  z-index: 0;
+  margin-left: 2.2rem;
+  border: 1px solid #bbb;
+  padding: .475em 1.8em .45em 2em;
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 1.2;
+  flex: 1;
+}
+.main .wrap_white .city_search .citylist dd p {
+  color: #777;
+  background: #ebebeb;
+  padding: 0 1em;
+  line-height: 2em;
+  height: 2em;
+  font-size: 1.5em;
+  box-shadow: 0 1px 1px rgba(51, 51, 51, 0.1) inset;
+}
+.main .wrap_white .city_search .citylist dd ul {
+  overflow: hidden;
+  padding: 0 1.5em 1.5em;
+}
+.main .wrap_white .city_search .citylist dd ul li {
+  float: left;
+  display: inline;
+  width: 25%;
+  padding: 1.5em 0 0;
+  color: #333;
+}
+.city_search .no_city,
+.city_search .newcity {
+  display: none;
+}
+.citylist dd li a,
+.citylist dd p,
+.newcity dd a {
+  font-size: 1.5em;
+}

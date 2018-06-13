@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>城市选择 - Mtime时光网</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+    <!--禁止缩放 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <!--iOS中Safari添加至主屏幕中图标-->
+    <link rel="apple-touch-icon" href="img/share07.png">
+    <!--收藏及快捷icon-->
+    <!-- <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon"> -->
+    <!-- 在收藏夹中显示图标 -->
+    <!-- <link type="image/x-icon" href="img/favicon.ico" rel="bookmark"> -->
+    <!-- 在iphone和ipod上创建快捷键时使用 -->
+    <!-- <link rel="apple-touch-icon" href="img/favicon.png"> -->
+
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/city.css">
+
+    <!-- <html> fontsize值 -->
+    <script src="js/app.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- 打开app -->
+        <div id="ad">
+
+        </div>
+        <div class="wrap_white">
+            <header class="header">
+                <a href="javascript:history.go(-1)"></a>
+                <p>选择城市</p>
+            </header>
+            <section class="city_search">
+                <div class="movie_search">
+                    <input type="text" placeholder="请输入搜索关键词" id="searchbox">
+                </div>
+                <div>
+                    <dl class="no_city citylist">
+                        <dd>
+                            <p class="px14">当前无此城市</p>
+                        </dd>
+                    </dl>
+                    <dl class="citylist newcity">
+
+                    </dl>
+                    <dl class="current_hot citylist">
+                        <dd>
+                            <p class="curr">当前城市:</p>
+                            <ul class="clearfix currentCity">
+                                <li data-id="292" data-name="上海">
+                                    <a href="javascript:void(0);">正在定位...</a>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <dd>
+                                <p>热门城市:</p>
+                                <ul id="hotcity" class="clearfix">
+                                    <!-- <li data-id="292" data-name="上海">
+                                        <a href="javascript:void(0);">上海</a>
+                                    </li>-->
+                                </ul>
+                            </dd>
+                        </dd>
+                    </dl>
+                    <dl id="cities" class="citylist">
+
+                    </dl>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+</body>
+<script src="js/common.js"></script>
+<script src="lib/zepto.js"></script>
+<script src="lib/touch.js"></script>
+<script src="js/city.js"></script>
+
+</html>
