@@ -1,0 +1,460 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.main * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search {
+  background: #f6f6f6;
+  position: relative;
+  height: 100%;
+  padding: .5625rem 1.09375rem .546875rem;
+  border-bottom: 1px solid #d8d8d8;
+}
+.search .searchbox {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.search .searchbox .localcity {
+  margin-right: 1.09375rem;
+  height: 2.5625rem;
+  line-height: 2.5625rem;
+}
+.search .searchbox .localcity b {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  font-size: .9375rem;
+  font-weight: 400;
+}
+.search .searchbox .localcity i {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  width: .65625rem;
+  height: .375rem;
+  margin-left: .3125rem;
+  margin-top: .125rem;
+  background: url(../img/de.png) 0 0 no-repeat transparent;
+  background-size: cover;
+}
+.search .searchbox input {
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  display: block;
+  font-size: 1rem;
+  width: 7.1875rem;
+  height: 2.1875rem;
+  padding-top: .1875rem;
+  margin-left: 1.5625rem;
+  padding-right: 1.65625rem;
+  padding-left: 2.1875rem;
+  border: 1px solid #bbb;
+  border-radius: .5em;
+  background: url(../img/search_ico_01.png) 0.5em no-repeat transparent;
+  background-color: #fff;
+  background-size: 1.3em 1.3em;
+  position: relative;
+  z-index: 0;
+}
+.search .searchbox .delete {
+  display: none;
+  width: 1.6em;
+  height: 1.6em;
+  background: url(../img/delete.png) 50% no-repeat transparent;
+  background-size: 1em 1em;
+  cursor: pointer;
+  position: absolute;
+  right: 6.4rem;
+  top: 50%;
+  margin-top: -0.8em;
+  z-index: 2;
+}
+.search .searchbox .searchbtn {
+  box-sizing: border-box;
+  color: #333;
+  width: 4.5rem;
+  display: block;
+  height: 2.1rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-left: .5rem;
+}
+.search .searchbox .searchbtn span {
+  font-size: .9375rem;
+}
+.select .sel1 {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.select .sel1 li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  text-align: center;
+}
+.select .sel1 li a {
+  color: #777;
+  display: block;
+  padding-top: .6875rem;
+  padding-bottom: .6875rem;
+}
+.select .sel1 li a span {
+  font-size: .8125rem;
+  line-height: 1.15625rem;
+}
+.select .sel1 li a i {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  width: .375rem;
+  height: .1875rem;
+  left: .28125rem;
+  background: url(../img/1212.png) 50% no-repeat transparent;
+  background-size: cover;
+}
+.select .sel1 li.line {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 1px;
+  flex: 0 0 1px;
+  height: .9375rem;
+  background: #d8d8d8;
+  overflow: hidden;
+}
+.select .sel1 li.active a {
+  color: #f97d3f;
+}
+.select .sel1 li.active a i {
+  background: url(../img/active.png) 50% no-repeat transparent;
+  background-size: cover;
+}
+.select .sel2 {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+}
+.select .sel2 .sort {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.select .sel2 .sort ul {
+  background-color: #fff;
+}
+.select .sel2 .sort ul li {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.6);
+}
+.select .sel2 .sort ul li span {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: .9375rem;
+  color: #777;
+  padding-left: 1.875rem;
+}
+.select .sel2 .sort ul li span.sel {
+  color: #f97d3f;
+}
+.select .sel2 .part {
+  background: #fff;
+}
+.select .sel2 .part header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+.select .sel2 .part header ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  text-align: center;
+}
+.select .sel2 .part header ul li a {
+  color: #777;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  padding-top: .625rem;
+  padding-bottom: .5rem;
+}
+.select .sel2 .part header ul li a span {
+  font-size: .8125rem;
+  line-height: 1.15625rem;
+}
+.select .sel2 .part header ul li a.cuur {
+  color: #f97d3f;
+  border-bottom: 1px solid #f97d3f;
+  border-bottom-width: .125rem;
+}
+.select .sel2 .part section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.select .sel2 .part section dl {
+  box-sizing: border-box;
+  width: 50%;
+}
+.select .sel2 .part section dl.left {
+  padding: 1.25rem 0 0 1.875rem;
+  background: #f5f5f5;
+}
+.select .sel2 .part section dl.left dd {
+  margin-top: 1.75rem;
+}
+.select .sel2 .part section dl.left dd a {
+  color: #555;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+}
+.select .sel2 .part section dl.left dd a span {
+  font-size: .9375rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+}
+.select .sel2 .part section dl.left dd a.sel {
+  color: #f97d3f;
+}
+.select .sel2 .part section dl.left dd:first-child {
+  margin-top: 0;
+}
+.select .sel2 .part section dl.right {
+  padding: 1.25rem 1.25rem 0 1.875rem;
+}
+.select .sel2 .part section dl.right dd {
+  margin-top: 1.75rem;
+}
+.select .sel2 .part section dl.right dd a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #555;
+}
+.select .sel2 .part section dl.right dd a span {
+  font-size: .9375rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+}
+.select .sel2 .part section dl.right dd a.sel {
+  color: #f97d3f;
+}
+.select .sel2 .part section dl.right dd:first-child {
+  margin-top: 0;
+}
+.select .sel2 .special {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.select .sel2 .special div {
+  background-color: #fff;
+  height: 10.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.select .sel2 .special div span {
+  height: 1.8125rem;
+  line-height: 1.8125rem;
+  width: 4.9375rem;
+  font-size: .8125rem;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #777;
+  margin-left: .3125rem;
+  margin-right: .3125rem;
+}
+.select .sel2 .special div span.sel {
+  color: #f97d3f;
+  border-color: #f97d3f;
+}
+.ad {
+  position: relative;
+  top: 1px;
+}
+.ad em {
+  border: 1px solid #fff;
+  padding: 0 .3rem;
+  position: absolute;
+  left: .3rem;
+  bottom: .5rem;
+  font-size: .7rem;
+  line-height: 1.2rem;
+  color: #fff;
+}
+.ad iframe {
+  width: 100%;
+  vertical-align: middle;
+}
+.theaterlist .cinema {
+  position: relative;
+  margin-left: .625rem;
+  padding: .9375rem .9375rem .9375rem 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.theaterlist .cinema dl .inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.theaterlist .cinema dl .inf .cname span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  font-size: 1rem;
+  line-height: 1.40625rem;
+}
+.theaterlist .cinema dl .inf .price {
+  color: #ff8600;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  white-space: nowrap;
+  right: 1rem;
+  zoom: 1;
+}
+.theaterlist .cinema dl .inf .price b {
+  font-size: 1.125rem;
+  line-height: 1.34375rem;
+  font-weight: normal;
+  margin-right: -0.3rem;
+}
+.theaterlist .cinema dl .inf .price span {
+  font-size: .8125rem;
+  line-height: 1.15625rem;
+}
+.theaterlist .cinema dl dd {
+  margin-top: .4375rem;
+}
+.theaterlist .cinema dl .addr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.theaterlist .cinema dl .addr p {
+  color: #777;
+  padding-right: .25rem;
+  font-size: .8125rem;
+  line-height: 1.15625rem;
+  font-weight: 400;
+}
+.theaterlist .cinema dl .tag i {
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  height: .875rem;
+  text-align: center;
+  margin-top: .4375rem;
+  margin-right: .3125rem;
+  padding: .0625rem;
+  /* padding-top: .1875rem; */
+  vertical-align: baseline;
+  font-size: .5625rem;
+  line-height: .875rem;
+  color: #6d8297;
+  border: 1px solid #6d8297;
+}
+.theaterlist .cinema dl .distance {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  color: #777;
+}
+.theaterlist .cinema dl .distance b {
+  font-weight: normal;
+}
+.top {
+  display: none;
+  background: url(../img/top.png) bottom no-repeat transparent;
+  background-size: 2.5rem auto;
+  position: fixed;
+  bottom: 5rem;
+  right: 0;
+  z-index: 101;
+  width: 4rem;
+  height: 4rem;
+}
+.top a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
