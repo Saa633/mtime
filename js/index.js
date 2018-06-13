@@ -1,18 +1,18 @@
 //添加广告组件
-var ad=new Ad({
+new Ad({
     ele:'#ad'
-})
+});
 
 //添加头部导航组件
-var hn=new HeaderNav({
+new HeaderNav({
     ele:'#headerNav',
     cur:0
-})
+});
 
 //添加底部组件
-var ff=new Footer({
+new Footer({
     ele:'#footer'
-})
+});
 
 
 var localnms='北京',localids=292,t = (new Date()).valueOf();
@@ -67,7 +67,7 @@ $.ajax({
     error:function(){  
         console.log('shibai') 
     }
-})
+});
 
 //请求渲染 今日热点 数据
 $.ajax({
@@ -105,9 +105,9 @@ $.ajax({
         }
     }, 
     error:function(){  
-        console.log('shibai') 
+        console.log('shibai');
     }
-})
+});
 
 
 //给Date原型添加 时间戳转换 方法
@@ -130,5 +130,5 @@ Date.prototype.format = function(fmt) {
         }
     }
    return fmt; 
-} 
+};
 

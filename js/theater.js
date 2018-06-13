@@ -1,16 +1,16 @@
 //加入广告组件
 new Ad({
     ele:'#ad'
-})
+});
 //添加头部导航组件
 new HeaderNav({
     ele:'#headerNav',
     cur:1
-})
+});
 //添加底部组件
 new Footer({
     ele:'#footer'
-})
+});
 
 $(function(){
     //当前城市，城市id，时间戳，当前经纬度
@@ -29,7 +29,7 @@ $(function(){
         error: function (xhr, type) {
             console.log('定位失败');
         }
-    })
+    });
 
     //判断本地存储定位城市是否存在
     if (localStorage.localcity !== undefined) {
@@ -59,9 +59,9 @@ $(function(){
 
             da.sort(function (a, b) {
                 return a.distance - b.distance;
-            })
+            });
 
-            let das=JSON.stringify(da)
+            let das=JSON.stringify(da);
             localStorage.setItem("cinemalist", das);
 
             Cinema(da);
@@ -70,7 +70,7 @@ $(function(){
         error: function () {
             console.log('shibai')
         }
-    })
+    });
 
     //请求存储城区地铁数据
     $.ajax({
@@ -78,7 +78,7 @@ $(function(){
         url: '/mtime/php/part.php?localid=' + localids + '&t=' + t,
         success: function (data) {
             let da = JSON.parse(data).data;
-            console.log(da)
+            console.log(da);
 
             //默认渲染城区
             DisData(da.districts);
@@ -90,15 +90,11 @@ $(function(){
             localStorage.setItem("districts", districts);
 
         }
-    })
+    });
 
 
 //================触发事件=====================================
 
-    //点击广告消失
-    $('.mclose').on('tap', function () {
-        $('#clientDownload').hide();
-    })
 
     // 回到顶部
     $(document).scroll(function () {
@@ -107,7 +103,7 @@ $(function(){
         } else {
             $('.top').hide();
         }
-    })
+    });
 
     // 搜索框删除按钮显示判断
     $('#searchbar').on('input', function () {
@@ -117,20 +113,20 @@ $(function(){
         } else {
             $('.delete').hide()
         }
-    })
+    });
 
     // 清除搜索内容
     $('.delete').on('tap', function () {
         $('#searchbar').val('');
         $(this).hide();
-    })
+    });
 
     //选择电影院
     $('.theaterlist').on('tap', 'li', function () {
         let cid = $(this).data('cinemaid');
         localStorage.setItem("cinemaid", cid);
         window.location.href = 'cinema.html';
-    })
+    });
 
     // 离我最近 / 价格最低
     $('.sort ul li').on('tap',function(){
@@ -147,7 +143,7 @@ $(function(){
             case 0:
                 da.sort(function (a, b) {
                     return a.distance - b.distance;
-                })
+                });
 
                 // Save(da);
                 Cinema(da);
@@ -156,10 +152,10 @@ $(function(){
             case 1:
                 da.sort(function (a, b) {
                     return a.minPrice - b.minPrice;
-                })
+                });
                 da=da.filter(function(s){
                     return s.minPrice>0;
-                })
+                });
 
                 // Save(da);
                 Cinema(da);
@@ -168,11 +164,11 @@ $(function(){
             default:
                 break;
         }
-    })
+    });
 
     // 筛选
     $('.sel1 li:not(.line)').on('tap', function () {
-        $(this).siblings().removeClass('active')
+        $(this).siblings().removeClass('active');
         $(this).addClass('active');
         $('.sel2').show();
         $('.sel2>div').hide();
@@ -192,7 +188,7 @@ $(function(){
                 break;
         }
 
-    })
+    });
 
 
     //渲染城区
@@ -202,7 +198,7 @@ $(function(){
 
         let dis = JSON.parse(localStorage.districts);
         DisData(dis);
-    })
+    });
 
     //渲染地铁
     $('#sub').on('tap', function () {
@@ -211,7 +207,7 @@ $(function(){
 
         let sub = JSON.parse(localStorage.subways);
         SubData(sub)
-    })
+    });
 
     //选择渲染电影院
     $('.right').on('tap','dd',function(){
@@ -226,7 +222,7 @@ $(function(){
 
 
 
-    })
+    });
 
 
 
@@ -284,7 +280,7 @@ $(function(){
             if (disid != 0) {
                 let dis = data.filter(function (e) {
                     return e.districtId == disid;
-                })
+                });
                 // console.log(dis)
                 $('.right').html(`<dd data-id="0">
                             <a class="sel" href="javascript:void(0);">
@@ -363,7 +359,7 @@ $(function(){
                             </dd>`);
 
                 dis[0].stations.forEach(a => {
-                    console.log(a)
+                    console.log(a);
                     let oli = `<dd data-id="${a.stId}">
                         <a href="javascript:void(0);">
                             <span>${a.stName}</span>
@@ -386,7 +382,7 @@ $(function(){
 
     //存储筛选影院列表
     function Save(data){
-        let das=JSON.stringify(data)
+        let das=JSON.stringify(data);
         localStorage.setItem("selcinemas", das);
     }
 
@@ -484,4 +480,4 @@ $(function(){
         //s=s.toFixed(4);
         return s;
     }
-})
+});
