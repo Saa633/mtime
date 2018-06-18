@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+i{font-style: normal;}
+
+.header{
+    width: 100%;
+    height: 4.4rem;
+    background: #1C2635;
+}
+.btn{
+    width: 4.4rem;
+    height: 4.4rem;
+    display: block;
+    background: url(../img/h_btn_back.png) no-repeat 1.5rem center;
+    background-size: auto 1.5rem;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+.img{
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+}
+.img .logo_mtime{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    color: #fff;
+    font-size: 1.6rem;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cont{
+    max-height: 46.5rem;
+    background: #f6f6f6;
+}
+.section{
+    background: #f6f6f6;
+    height: 100%;
+}
+.first{
+        background: #fff;
+    margin: 0 1rem;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.ul{
+    padding: 3.2rem 1.5rem .55rem;
+}
+.ul li{
+    padding: 0 0 1rem 0;
+}
+.table{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+}
+.ul li b{
+    font-weight: normal;
+    display: block;
+    color: #777;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.ul li:nth-child(1) p{
+    font-weight: bold;
+}
+.td{
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+}
+.ul li:nth-child(2) p{
+    font-size: 1.4rem;
+}
+.ul li:nth-child(3) p{
+    color: #ff8600;
+    font-weight: bold;
+}
+.block{
+    display: inline-block;
+    vertical-align: middle;
+}
+.ul li:last-child p{
+    padding-right: 0.6rem;
+    margin-top: -0.1rem;
+}
+.second{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.second li{
+    display: inline-block;
+}
+.second li:first-child{
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #ddd;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    margin-left: -0.8rem;
+}
+.second .tds{
+    width: 92.5%;
+    height: 0.8rem;
+    border-top: 1px dashed #ccc;
+    overflow: hidden;
+
+}
+.second li:last-child{
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #ddd;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    margin-right: -2.5rem;
+}
+.third{
+    padding: 1.65rem 1.5rem 1rem;
+}
+.third .dt{
+    width: 100%;
+    height: 4.45rem;
+    border-radius: 4rem;
+    background: #fff;
+    display: -webkit-box;
+}
+.dt input{
+    width:90%;
+    display: block;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    color: #999;
+    height: 100%;
+    border: 1px solid #1e7dd7;
+    background: #fafdff;
+    border-radius: 4rem;
+    overflow: hidden;
+}
+.dd{
+    color: #ff8600;
+    margin: 1.4rem 0 0;
+    line-height: 1.4rem;
+}
+.dd span{
+    font-size: 1.2rem;
+}
+.watier{
+    padding: 0.4rem 0 1rem 0;
+    text-align:center;
+    color: #1e7dd7;
+    display: block;
+    cursor: pointer;
+}
+.watier b{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.watier .tel{
+    width: 1.7rem;
+    height: 2.2rem;
+    margin: 0 1rem;
+    background: url(../img/i_tel_01.png) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+.chose{
+    padding: 5.5rem 1.5rem 6rem;
+}
+.chose p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #777;
+    position: relative;
+    left: 1rem;
+    top: -4rem;
+}
+.chose p:after{
+    content: '';
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 1rem;
+    background: #777;
+    position: absolute;
+    left: -1rem;
+    top: .4rem;
+}
+.footer{
+    width: 100%;
+    height: 4.2rem!important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.orange{
+    float: right;
+    padding: 0;
+    width: 9.5em;
+    border-radius: 0;
+    position: relative;
+    height: 4.2rem!important;
+    color: #fff;
+    font-size: 1.4rem!important;
+    text-align: center;
+    line-height: 4.2rem!important;
+    font-weight: normal!important;
+    background: #ff8600;
+    color: #fff;
+    border: 1px solid #ff8600;
+}
+.orange span{
+    font-size: 1.9rem;
+    height: 100%;
+    display: block;
+    line-height: 4rem;
+
+}
+.footer p{
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.footer strong{
+    font-weight: normal;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer b{
+    font-size: 1.8rem;
+    color: #ff8600;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer em{
+    color: #999;
+    font-weight: normal;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}

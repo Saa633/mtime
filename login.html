@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body style="background: #F6F6F6;">
+    <div class="header">
+        <a href="" class="btn"></a>
+        <div class="img">
+            <a href="javascript:;" class="logo_mtime"></a>
+        </div>
+    </div>
+
+    <div class="cont">
+        <ul class="ul">
+            <li>
+                <div class="count">
+                    <i class="user"></i>
+                    <input name="loginname" type="txt" placeholder="登录邮箱/手机号码" class="td" id="ipt">
+                    <a href="javascript:;" class="clear"></a>
+                </div>
+            </li>
+
+            <li>
+                <div class="count">
+                        <i class="password"></i>
+                        <input name="password" type="password" placeholder="密码" class="td">
+                        <a href="javascript:;" class="showpass">
+                            <span class="span">显示密码</span></a>
+                    </div>
+            </li>
+        </ul>
+
+        <a href="javascript:;" class="dl login">
+            <span>登录</span>
+        </a>
+
+        <div class="click">
+            <p class="left">
+                <a href="Loading.html">免费注册</a>
+            </p>
+            <p class="left">
+                <a href="javascript:;">找回密码</a>
+            </p>
+        </div>
+
+        <div class="blank">
+            <p>
+                <span>使用第三方登录</span>
+            </p>
+            <ul class="ul1">
+                <li>
+                    <a href="javascript:;" class="weibo"></a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="qq" id="qqLoginBtn"></a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- <div class="footer"></div> -->
+    <script>
+            $(".span").click(function(){
+                if ($( this ).parent().siblings("input").attr("type") == "text") {
+                    $( this ).parent().siblings("input")[0].type = "password";
+                }else{
+                    $( this ).parent().siblings("input")[0].type = "text"; 
+                }   
+            });
+
+            $('#ipt').on('blur',function(){
+                $('.clear').css('display','block');
+            })
+            $('#ipt').on('focus',function(){
+                $('.clear').css('display','none');
+            })
+            $('.clear').on('click',function(){
+                $('#ipt').val('');
+            })
+            
+            
+    </script>
+</body>
+</html>
