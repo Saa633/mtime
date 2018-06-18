@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+i{font-style: normal;}
+.header{
+    width: 100%;
+    height: 4.4rem;
+    background: #1C2635;
+}
+.btn{
+    width: 4.4rem;
+    height: 4.4rem;
+    display: block;
+    background: url(../img/h_btn_back.png) no-repeat 1.5rem center;
+    background-size: auto 1.5rem;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+.img{
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+}
+.img .logo_mtime{
+    width: 5.6rem;
+    height: 1.8rem;
+    background: url(../img/logo_mtime.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cont{
+    width: 100%;
+    background: #F6F6F6;
+}
+.ul{
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(51,51,51,0.1);
+}
+.ul li{
+    margin-left: 5.5rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 1.2rem 0;
+}
+.count{
+    height: 100%;
+}
+.user{
+    width: 1.9rem;
+    height: 2.3rem;
+    margin-left: -3rem;
+    margin-right: 1rem;
+    display: block;
+    background: url(../img/user.png) no-repeat;
+    background-size: cover;
+}
+.td{
+    font-size: 1.5rem;
+    height: 2.4rem;
+    line-height: 1.4rem;
+    margin-top: -2.4rem;
+    border: 0;
+    display: block;
+    background: #fff;
+}
+.clear{
+    display: block;
+    margin-right: 1.2rem;
+    width: 3rem;
+    height: 3.3rem;
+    background: url(../img/delete.png) no-repeat 0.5rem center;
+    background-size: 1.6rem 1.6rem;
+    float: right;
+    margin-top: -2.6rem;
+    cursor: pointer;
+    display: none;
+}
+.password{
+    width: 2rem;
+    height: 2.2rem;
+    margin-left: -3rem;
+    margin-right: 1rem;
+    display: block;
+    background: url(../img/password.png) no-repeat;
+    background-size: cover;
+}
+.showpass{
+    margin-right: 1.5rem;
+    color: #1e7dd7;
+    cursor: pointer;
+    line-height: 2rem;
+    display: block;  
+    float: right;
+    margin-top: -2rem;
+}
+.showpass span{
+    font-size: 1.4rem;
+}
+.cont .login{
+    display: block;
+    margin: 2rem 1.5rem;
+    padding: 1.15rem 0;
+    border-radius: 40rem;
+    text-align: center;
+    color: #fff;
+    background: #1e7dd7;
+    border: 1px solid #1e7dd7;
+}
+.login span{
+    font-size: 1.8rem;
+    height: 100%;
+    display: block;
+}
+.click{
+    width: 100%;
+    display: -webkit-box;
+}
+.left{
+    font-weight: bold;
+    -webkit-box-flex: 1;
+    -khtml-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -khtml-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+.left a{
+    padding: 0 1.5rem;
+    line-height: 3.5rem;
+    display: block;
+    color: #1e7dd7;
+    font-size: 1.4rem;
+}
+.click p:last-child a {
+    text-align: right;
+    color: #777;
+}
+.blank{
+    margin: .5rem 1.5rem 0;
+    border-top: 1px solid #d8d8d8;
+    padding-bottom: 2.5rem;
+}
+.blank p{
+    text-align: center;
+    margin-top: -0.7rem;
+    margin-bottom: 2rem;
+}
+.blank p span{
+    font-size: 1.2rem;
+    color: #999;
+    padding: 0 .5rem;
+    background: #f6f6f6;
+}
+.ul1{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+}
+.ul1 li{
+    width: 5.5em;
+    height: 5.5em;
+    display: block;
+    float: left;
+    margin-left: 6rem;
+}
+.weibo{
+    display: block;
+    width: 5.5em;
+    height: 5.5em;
+    background: url(../img/weibo.png) no-repeat;
+    background-size: cover;
+}
+.qq{
+    display: block;
+    width: 5.5em;
+    height: 5.5em;
+    background: url(../img/qq.png) no-repeat;
+    background-size: cover;
+}
+.footer{
+    width: 100%;
+    height: 18.4rem;
+}
