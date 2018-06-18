@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		canvas{
+			box-sizing: border-box;
+			height: 100%;
+			position: relative;
+			width: 100%;
+		}
+		div.box{
+			width: 400px;
+			height: 400px;
+			background: #666;
+			border-radius: 50%;
+			margin: 60% auto;
+		}
+		div.box span{
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin-top: 0.5rem;
+			font-size:2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<canvas id="myCanvas"></canvas>	
+		<span>正在加载中...</span>
+	</div>
+</body>
+</html>
+<script src="js/img.js"></script>
+<script>
+	var img = new Img({id:'myCanvas',index:{max:17,zhong:1}})
+</script>
