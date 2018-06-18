@@ -1,0 +1,324 @@
+.main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999;
+    background: #f6f6f6;
+}
+
+.main * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+span.i_tnext {
+    display: inline-block;
+    width: 1rem;
+    height: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    overflow: hidden;
+    background: #fff url(../img/exitImg/i-tmore.png) no-repeat center center;
+    background-size: auto 0.8rem;
+    transform: rotate(-90deg);
+    margin-right: 1.1rem;
+}
+
+/* 入场动画 */
+
+div#big_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    z-index: 9999;
+    text-align: center;
+}
+
+div#load {
+    width: 10rem;
+    height: 10rem;
+    background: #666;
+    border-radius: 50%;
+    margin: 60% auto 0;
+}
+
+canvas {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+div#load span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+div#wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#wrap>div {
+    width: 100%;
+    clear: both;
+}
+
+#wrap>div.title {
+    background: url(../img/exitImg/set_endlogin.jpg) no-repeat left;
+    background-size: cover;
+    padding-top: 4rem;
+    height: 12rem;
+    color: #fff;
+}
+
+#wrap>div.title>div {
+    display: inline-block;
+    float: left;
+}
+
+div.title div.Head_portrait {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 2rem;
+    /* border: 1px solid #fff; */
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+div.title div.Head_portrait img#headImg {
+    width: 100%;
+    height: 100%;
+}
+
+div.title div.right {
+    padding-top: 0.4rem;
+}
+
+div.title div.viplevel {
+    display: inline-block;
+    margin-left: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: url(../img/exitImg/vip_grade.png) no-repeat center;
+    background-size: cover;
+    font-size: 0.8rem;
+    padding: 0 0.2rem;
+    width: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+h4#name {
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+div.title div.money {
+    display: block;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+div.shoptool {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 1px 1px 0.3rem rgba(51, 51, 51, 0.1);
+    padding: 0rem 1.5rem;
+    position: relative;
+    height: 10rem;
+}
+
+div.shoptool ul {
+    height: 100%;
+}
+
+div.shoptool ul li {
+    float: left;
+    width: 33%;
+    /* padding: 1.5rem 0rem 1.2rem; */
+    text-align: center;
+}
+
+div.shoptool ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0 1.2rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.shoptool ul li a i {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 5rem;
+    display: block;
+    margin-left: 1.5rem;
+}
+
+div.shoptool ul li a i.i_cart {
+    background: #ffb059 url(../img/exitImg/i_cate.png) no-repeat center center;
+    background-size: auto 4.5rem;
+}
+
+div.shoptool ul li a i.i_movie {
+    background: #78bdfd url(../img/exitImg/i_movie.png) no-repeat center center;
+    background-size: auto 2.3rem;
+}
+
+div.shoptool ul li a i.i_shop {
+    background: #ff815a url(../img/exitImg/i_shop.png) no-repeat center center;
+    background-size: auto 2.3rem;
+}
+
+div.shoptool ul li a p {
+    margin-top: 0.8em;
+}
+
+div.shoptool ul li a span {
+    display: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .5rem .8rem;
+    background: #fe4014;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 10rem;
+    overflow: hidden;
+    line-height: 1;
+}
+
+div.content {
+    margin-bottom: 2rem;
+    background: #fff;
+    box-shadow: 1px 1px 0.3rem rgba(51, 51, 51, 0.1);
+}
+
+div.content ul {
+    margin-left: 1.5rem;
+}
+
+div.content ul li {
+    padding: 1rem 0;
+    height: 4rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+div.content ul li:last-child {
+    border: none;
+}
+
+div.content ul li a {
+    display: block;
+    height: 100%;
+    line-height: 3rem;
+    /* padding: 0.9rem 0; */
+}
+
+div.content ul li a i {
+    width: 2.5rem;
+    height: 1.8rem;
+    display: block;
+    float: left;
+}
+
+div.content ul li a i.i_my_card {
+    background: url(../img/exitImg/my_card.png) no-repeat center center;
+    background-size: 1.8rem auto;
+}
+
+div.content ul li a i.i_my_active {
+    background: url(../img/exitImg/my_radio.png) no-repeat center center;
+    background-size: 1.8rem auto;
+}
+
+div.content ul li a i.i_my_movie {
+    background: url(../img/exitImg/my_movie.png) no-repeat center center;
+    background-size: 1.8rem auto;
+}
+
+div.content ul li a i.i_my_fav {
+    background: url(../img/exitImg/my_fav.png) no-repeat center center;
+    background-size: 1.8rem auto;
+}
+
+div.content ul li a p {
+    height: 100%;
+    line-height: 2rem;
+}
+
+div.content ul li a p.num {
+    float: right;
+    margin-right: 3rem;
+    margin-top: -2rem;
+}
+
+div.content ul li a {
+    position: relative;
+    width: 100%;
+}
+
+div.feedback_help {
+    padding-top: 0.8rem;
+    background: #fff;
+    padding-bottom: 1rem;
+    box-shadow: 1px 1px 0.3rem rgba(51, 51, 51, 0.1);
+}
+
+div.feedback_help ul {
+    margin-left: 1.5rem;
+}
+
+div.feedback_help ul li {
+    height: auto;
+}
+
+div.feedback_help ul li:first-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+div.feedback_help ul li a {
+    margin: 1rem 0;
+    height: 100%;
+    display: block;
+    font-size: 1rem;
+    position: relative;
+}
+
+div.feedback_help ul li a span.i_tnext {
+    top: 22%;
+}
+
+div.exit {
+    padding: 0 1.5rem 0;
+    background: #f6f6f6;
+}
+
+div.exit>a {
+    display: inline-block;
+    padding: 0;
+    background: #f13900;
+    color: #fff;
+    width: 100%;
+    min-width: 20rem;
+    border-radius: 3rem;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}

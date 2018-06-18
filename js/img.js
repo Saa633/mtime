@@ -1,3 +1,29 @@
+function cloth(obj) {
+	this.html='';
+	this.ele=document.querySelector(obj.ele);
+	this.init();
+}
+cloth.prototype={
+	init(){
+		this.Render();
+		this.Close();
+	},
+	Render(){
+		this.html='<canvas id="myCanvas"></canvas><span id="load_span">正在加载...</span>';
+		this.ele.innerHTML=this.html;
+	},
+	Close(){
+		var that = this.ele;
+		setTimeout(() => {
+			$('#big_box').css({
+				'display':'none',
+				'zIndex':'0'
+			})
+		}, 4000);
+	}
+}
+
+
 function Img(obj){
 	this.id = obj.id;
 	this.indexmax = obj.index.max;
